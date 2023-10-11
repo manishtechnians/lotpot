@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>LOT POT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/lotpot_logo.png" class="img-fluid">
+        </a>
+        <div class="d-flex align-items-center">
+          <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="d-lg-none d-block list_item_mob">
+            <a data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
+              <img src="images/List.png" class="img-fluid">
+            </a> 
+          </div>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#our-story">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#youtube">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#e-comics">E-Comics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#characters">Characters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#games">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Content</a>
+            </li>
+          </ul>
+          <div class="d-lg-block d-none">
+            <a data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
+              <img src="images/List.png" class="img-fluid">
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--<img src="images/lotpot-gif.gif" alt="banner" class="img-fluid"> -->
+   <video width="100%" autoplay  loop muted playsinline id="myVideo">
+  <source src="images/loty.mp4" type="video/mp4">
+</video>
+<button id="playButton" style="position:absolute;opacity:0;">Play</button>
+
+<script>
+   var video = document.getElementById("myVideo");
+  var playButton = document.getElementById("playButton");
+
+  // Function to simulate a click on the play button
+  function clickPlayButton() {
+    if (video) {
+      video.play();
+      playButton.style.display = "none"; // Hide the play button after clicking
+    }else {
+       playButton.style.opacity = "0"; 
+       playButton.style.position = "absolute"; 
+    }
+  }
+
+  // Trigger the click event on the play button when the page loads
+  window.addEventListener("load", clickPlayButton);
+</script>
+  </header>
+
+
+  <!-- Favourite comic start -->
+  <section class="fav_comic" id="e-comics">
+    <div class="container">
+      <div class="row justify-content-center align-items-end">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-xl-9 mx-auto">
+              <div class="main-title text-center">
+                <h5>Dive into the world of kids</h5>
+                <h3>Favourite Comic</h3>
+              </div>
+              <div class="row comic_type">
+                <div class="col-6 py-2 px-1">
+                  <p>Stories</p>
+                </div>
+                <div class="col-6 py-2 px-1">
+                  <p>Jungle World</p>
+                </div>
+                <div class="col-6 py-2 px-1">
+                  <p>Fun Facts</p>
+                </div>
+                <div class="col-6 py-2 px-1">
+                  <p>Public Figure</p>
+                </div>
+                <div class="col-6 py-2 px-1">
+                  <p>Travel</p>
+                </div>
+                <div class="col-6 py-2 px-1">
+                  <p>Games/ Puzzles</p>
+                </div>
+                <div class="col-6 py-2 px-1">
+                  <p>Poem</p>
+                </div>
+                <div class="col-6 py-2 px-1">
+                  <p>Positive News</p>
+                </div>
+                <div class="col-6 p-1 mx-auto text-center">
+                  <a href="#">Explore Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="position-relative">
+            <img src="images/tag.png" alt="tag" class="img-fluid position_tag">
+          </div>
+          <img src="images/reading-motu-patlu.png" alt="reading" class="img-fluid reading_comic">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Favourite comic end-->
+
+  <!-- Dotted border start-->
+  <section class="border-clip">
+    <div class="container-fluid dotted_border">
+      <!-- <div class="row">
+        <div class="col-md-12"> -->
+      <img src="images/lotpot-multiplex-new.png" alt="border" class="img-fluid w-100">
+      <!-- </div>
+      </div> -->
+    </div>
+  </section>
+  <!-- Dotted border end-->
+
+  <!-- Lotpot multiplex start-->
+  <section class="lotpot_multiplex" id="youtube">
+    <div class="container-fluid ps-md-5 pe-md-4">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="main-title text-center">
+            <h5>Watch our latest youtube videos here</h5>
+            <h3>Lotpot Multiplex</h3>
+            <a href="#"> Explore Now <img src="images/youtube.png" alt="icon" class="img-fluid"></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="minni_img">
+            <img src="images/minni.png" alt="minni" class="img-fluid">
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Lotpot multiplex end-->
+
+  <!-- Read your Favourite start -->
+  <section class="your_fav" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center order-md-1 order-2">
+          <img src="images/lotpot-magzine.png" alt="magzine" class="img-fluid">
+          <a href="#"> Explore Now</a>
+        </div>
+        <div class="col-md-6 order-md-2 order-1">
+          <div class="main-title">
+            <h5>Read your favorite</h5>
+            <h3>Lotpot Comics</h3>
+          </div>
+          <img src="images/ghasita-jhatka.png" alt="magzine" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Read your Favourite end -->
+
+  <!-- our Characters start -->
+  <section class="our_characters" id="characters">
+    <div class="container">
+      <div class="row">
+        <div class="main-title text-center">
+          <h5>Meet</h5>
+          <h3>Our Characters</h3>
+        </div>
+        <div class="col-md-12">
+          <div class="swiper our_character pt-lg-5">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg yellow">
+                  <img src="images/motu-patlu.png" alt="motu-patlu" class="img-fluid">
+                  <h6>Motu Patlu</h6>
+                  <!--<p>Oldest Kids magazine of INDIA</p>-->
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg orange">
+                  <img src="images/deva.png" class="img-fluid">
+                  <h6>Super hero DEVA</h6>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg skyblue">
+                  <img src="images/natkhat-neetu.png" class="img-fluid">
+                  <h6>Natkhat neetu</h6>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg maroon">
+                  <img src="images/sheikh-chilli.png" class="img-fluid">
+                  <h6>Sheikh Chilli</h6>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg green">
+                  <img src="images/khatkoo.png" class="img-fluid">
+                  <h6>Khatkoo</h6>
+                  <!--<p>Oldest Kids magazine of INDIA</p>-->
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg parrotgreen">
+                  <img src="images/noorie.png" class="img-fluid">
+                  <h6>noorie jinn</h6>
+                  <!--<p>Oldest Kids magazine of INDIA</p>-->
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg orange">
+                  <img src="images/chelaram.png" class="img-fluid">
+                  <h6>Chelaram</h6>
+                  <!--<p>Oldest Kids magazine of INDIA</p>-->
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg skyblue">
+                  <img src="images/minni_1.png" class="img-fluid">
+                  <h6>Minni</h6>
+                  <!--<p>Oldest Kids magazine of INDIA</p>-->
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg maroon">
+                  <img src="images/bunty-chutaki.png" class="img-fluid">
+                  <h6>Bunty & Chutaki</h6>
+                  <!--<p>Oldest Kids magazine of INDIA</p>-->
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg yellow">
+                  <img src="images/papitaram.png" class="img-fluid">
+                  <h6>Papitaram</h6>
+                  <!--<p>Oldest Kids magazine of INDIA</p>-->
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <!-- 					<div class="swiper-button-prev swiper-button-prev-our_characters"></div>
+					<div class="swiper-button-next swiper-button-next-our_characters"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- our Characters end -->
+
+
+  <!-- neetu's adventure start -->
+  <section class="neetu_adventure" id="games">
+    <div class="container-fluid">
+      <div class="row align-items-md-end align-items-center">
+        <div class="col-sm-5 col-md-5 p-0">
+          <div class="deva_img">
+            <img src="images/deva_1.png" alt="deva" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-sm-7 col-md-7">
+          <div class="row">
+            <div class="col-md-10 mx-lg-auto ms-auto">
+              <div class="row align-items-center ps-md-3 ps-xl-5 margin_bottom_position">
+                <div class="col-6 col-sm-6">
+                  <div class="main-title text-center">
+                    <h5>Our Games</h5>
+                    <h3>Neetu's <br>Adventure</h3>
+                    <a href="#">Download Now</a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6">
+                  <img src="images/neetu-adventure-img.png" alt="adventure" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-11">
+              <div class="deva_aim">
+                <h5>Deva's aim</h5>
+                <img src="images/deva-aim_1.png" alt="deva-aim" class="img-fluid">
+                <a href="#">Download Now</a>
+              </div>
+              <div>
+                <ul>
+                  <li>PLAY LOTPOT GAMES HERE. <br>AVAILABLE ON GOOGLE PLAY STORE</li>
+                  <li>
+                    <img src="images/play-store.png" alt="play-store" class="img-fluid">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- neetu's adventure end -->
+
+  <!-- our story start -->
+  <section class="our_story" id="our-story">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 main-title">
+          <h3>Our Story</h3>
+          <p>Mr. A.P BAJAJ, launched India's first kids magazine-LOTPOT in 1969. We are a well- established in New Delhi, India based publishing & content producing company reputed for high levels of quality & content. We provide our clients solutions for - Publications, Media, Entertainment, Advertising, Digital, Retail at national level.
+          <p> Popular characters of Lotpot Comics "Motu Patlu" have a 3D animated show successfully running since the last 11 years on Nickelodeon India TV Channel and still continues entertaining kids with its rib tickling content. Apart from Motu Patlu, we have numerous other popular characters from Lotpot Comics ready to deliver in animation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- our story end -->
+
+  <!-- footer img start -->
+  <section class="footer_img py-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 p-0">
+          <img src="images/footer_bottom.png" alt="footer_bottom" class="img-fluid w-100">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer img end -->
+
+  <section class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="footer_ul">
+            <li>
+              <div class="row">
+                <div class="col-3 col-md-3 p-1">
+                  <ul class="socials">
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-9 col-md-9 p-1">
+                  <p>© 2023 lotpot. All Rights Reserved </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <ul class="footer_menus">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="col-md-4">
+          <div class="row">
+            <div class="col-3 col-md-3 p-1">
+              <ul class="socials">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-youtube-play"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-9 col-md-9 p-1">
+              <p>© 2023 lotpot. All Rights Reserved </p>
+            </div>
+          </div>
+        </div>  
+        <div class="col-md-4">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <div class="nav_offcanvas" >
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+       <div class="row align-items-center">
+        <div class="col-7 col-md-7">
+          <img src="images/offcanvas-img.png" alt="offcanvas-img" class="img-fluid">
+        </div>
+        <div class="col-5 col-md-5 p-0">
+          <ul>
+            <div class="mob-menu">
+              <li>
+                <a href="#">Our Story</a>
+              </li>
+              <li>
+                <a href="#">Videos</a>
+              </li>
+              <li>
+                <a href="#">E-Comics</a>
+              </li>
+              <li>
+                <a href="#">Characters</a>
+              </li>
+              <li>
+                <a href="#">Games</a>
+              </li>
+              <li>
+                <a href="#">Content</a>
+              </li>
+            </div>
+            <li>
+              <a href="#">Moral Stories</a>
+            </li>
+            <li>
+              <a href="#">Fun Facts</a>
+            </li>
+            <li>
+              <a href="#">Travel</a>
+            </li>
+            <li>
+              <a href="#">Poem</a>
+            </li>
+            <li>
+              <a href="#">Jungle World</a>
+            </li>
+            <li>
+              <a href="#">Public Figure</a>
+            </li>
+            <li>
+              <a href="#">Games/Puzzles</a>
+            </li>
+            <li>
+              <a href="#">Positive News</a>
+            </li>
+          </ul>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var awards = new Swiper('.our_character', {
+      loop: true, 
+      spaceBetween: 10,
+      speed: 1500,
+      navigation: {
+        nextEl: '.swiper-button-next-our_characters',
+        prevEl: '.swiper-button-prev-our_characters',
+      },
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        1200: {
+          slidesPerView: 6,
+          spaceBetween: 30
+        },
+        991: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        },
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 10
+        },
+        400: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        }
+      }
+    });
+  </script>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+</body>
+
+</html>
